@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+
+        <!-- intro Section is the page of introduction -->
+      <div id="introSection">
+        <div class="intro">
+          <img src="/greet.png" alt="" />
+          <h1>Hi, Welcome to Our Quiz</h1>
+        </div>
+        <div id="section">
+          <div id="intro">Can I ask your Name?</div>
+          <input type="name" id="name" />
+          <div>Are You Ready for Quiz?</div>
+          <button id="startbtn" onclick="displayQuiz()" class="btn1">
+            StartQuiz
+          </button>
+        </div>
+      </div>
+      <!-- quiz section  -->
+      <div id="Quizsection">
+        <h2 id="question">Question goes here</h2>
+        <div id="answer-buttons">
+          <button class="btn">1</button>
+          <button class="btn">2</button>
+          <button class="btn">3</button>
+          <button class="btn">4</button>
+        </div>
+         <!-- Next button -->
+        <button id="nextbtn" class="btn">Next</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
